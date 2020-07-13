@@ -1,0 +1,38 @@
+#about {
+    text-align: center;
+    margin-top: 30px;
+    padding: 50px;
+}
+
+a {
+    color: black;
+}
+
+img {
+    border-radius: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+}
+
+.links a {
+    padding: 10px;
+}
+
+.dropdown {
+    padding: 20px;
+    display: inline-block;
+}
+
+i {
+    font-size: 48px;
+}
+
+i:hover {
+    transform: scale(1.5);
+}
+
+.footer {
+    text-align: center;
+}

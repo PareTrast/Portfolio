@@ -1,6 +1,14 @@
+@keyframes spin {
+    from {
+        transform: rotate(0deg) scale(1);
+    }
+    to {
+        transform: rotate(360deg) scale(1.5);
+    }
+}
+
 #about {
     text-align: center;
-    margin-top: 30px;
     padding: 50px;
 }
 
@@ -16,6 +24,19 @@ img {
     margin-top: 50px;
 }
 
+.skills {
+    text-align: center;
+    margin-top: 25px;
+}
+
+ul>li {
+    display: inline;
+    padding: 10px;
+    list-style: none;
+    font-size: 20px;
+    border: black solid 2px;
+}
+
 .links a {
     padding: 10px;
 }
@@ -23,6 +44,12 @@ img {
 .dropdown {
     padding: 20px;
     display: inline-block;
+    color: black;
+}
+
+.btn {
+    color: white;
+    background-color: black;
 }
 
 i {
@@ -31,8 +58,24 @@ i {
 
 i:hover {
     transform: scale(1.5);
+    animation-duration: 1s;
+    animation-name: spin;
 }
 
 .footer {
     text-align: center;
+}
+
+@media only screen and (max-width:720px) {
+    li {
+        display: block;
+    }
+}
+
+p {
+    width: auto;
+    display: block
+}
+
+
 }
